@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"/><title>Focus Mode Options</title></head>
+<body>
+  <h3>Settings</h3>
+  <p>Blocked sites (comma separated):</p>
+  <input id="blocked" style="width:400px" />
+  <p><button id="save">Save</button></p>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const blocked = document.getElementById('blocked');
+      const save = document.getElementById('save');
+      chrome.storage.local.get(['blockedSites'], d => {
+        blocked.value = (d.blockedSites || []).join(', ');
+      });
+      save.onclick = () => {
+        const arr = blocked.value.split(',').map(s => s.trim()).filter(Boolean);
+        chrome.storage.local.set({ blockedSites: arr }, () => { save.textContent = 'Saved'; setTimeout(()=> save.textContent='Save',900); });
+      };
+    });
+  </script>
+</body>
+</html>

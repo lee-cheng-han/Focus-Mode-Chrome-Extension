@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Focus Mode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Focus Mode</h2>
+  <label>Enable <input type="checkbox" id="enabled" /></label>
+  <label>Blocked sites (comma)</label>
+  <input id="blocked" placeholder="youtube.com, reddit.com" />
+  <div style="margin-top:10px">
+    <button id="save">Save</button>
+  </div>
+  <div style="margin-top:12px; font-size:13px; color:#444;">
+    Click Save, then open a blocked site to test.
+  </div>
+  <script src="popup.js"></script>
+  <button id="whitelistBtn">Whitelist 5 min</button>
+</body>
+</html>

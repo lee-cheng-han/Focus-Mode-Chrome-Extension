@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Blocked — Focus Mode</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; display: grid; place-items:center; height:100vh; margin:0; background:#0f172a; color:#fff; }
+    .card { text-align:center; padding:28px; border-radius:12px; box-shadow: 0 6px 18px rgba(2,6,23,0.6); background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); max-width:760px; }
+    .btn { margin-top:14px; padding:8px 12px; border-radius:8px; border:0; cursor:pointer; background:#10b981; color:#042; }
+    .small { font-size:13px; color:#cbd5e1; margin-top:8px; word-break:break-all; }
+    .muted { color:#94a3b8; margin-top:6px; }
+    .secondary { background:#334155; color:#fff; margin-left:8px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Stay Focused 🚀</h1>
+    <p id="msg">You're visiting a site that's blocked while Focus Mode is enabled.</p>
+    <div>
+      <button id="backBtn" class="btn secondary">Go back</button>
+      <button id="whitelistBtn" class="btn">Whitelist 5 min</button>
+    </div>
+    <div class="small muted">Original URL: <span id="origUrl">—</span></div>
+  </div>
+
+  <script src="blocked.js"></script>
+</body>
+</html>
