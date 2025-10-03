@@ -1,0 +1,8 @@
+{
+  "name": "focus-mode-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension to block distracting websites",
+  "scripts": {
+    "build": "zip -r focus-mode-v1.0.zip . -x '*.git*' 'node_modules/*' '*.DS_Store'"
+  }
+}
