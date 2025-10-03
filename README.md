@@ -2,7 +2,8 @@
 
 A Chrome extension designed to help students and professionals stay focused by blocking distracting websites. Take control of your productivity with customizable site blocking and temporary whitelist features.
 
-
+![Extension Popup](screenshots/Block.png)
+![Blocked Page](screenshots/image.png)
 
 ## Features
 
